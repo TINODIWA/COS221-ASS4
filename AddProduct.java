@@ -113,10 +113,10 @@ public class AddProduct extends JDialog {
             }
 
             // Load distinct categories from products
-            String categoryQuery = "SELECT DISTINCT category FROM products WHERE category ?";
+            String categoryQuery = "SELECT DISTINCT category FROM products WHERE category IS NOT NULL";
             try {
                 pstmt2 = conn.prepareStatement(categoryQuery);
-                pstmt2.setString(1, "IS NOT NULL");
+//                pstmt2.setString(1, "IS NOT NULL");
                 rs2 = pstmt2.executeQuery();
                 
                 category_box.addItem("");

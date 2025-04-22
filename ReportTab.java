@@ -68,4 +68,8 @@ public class ReportTab extends JPanel {
             }
         }
     }
+    
+    public void refreshOnTabOpen(){
+        getReportData();
+    }
 }
