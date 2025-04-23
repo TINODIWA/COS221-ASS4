@@ -63,10 +63,10 @@ public class AddClient extends JDialog{
                 n.printStackTrace();
                 JOptionPane.showMessageDialog(this, "Failed to add client.");
             }
-        });
-
-        cancelButton.addActionListener(e -> dispose());
-
+<<<<<<< HEAD
+=======
+            finally {
+                try {
         setVisible(true);
     }
 }
